@@ -5,8 +5,8 @@
 </head>
 <body>
     <h1>City Info</h1>
-    <input type="text" id="city" placeholder="Enter the city name" font-size="30px">
-    <button onclick="getCityInfo()"  font-size="30px">Get info</button>
+    <input type="text" id="city" placeholder="Enter the city name"/>
+    <button onclick="getCityInfo()">Get info</button>
     <script>
         const city={
             pune:{
@@ -31,9 +31,9 @@
         
         function getCityInfo(){
             const cityName=document.getElementById("city").value.toLowerCase();
-            console.log(cityInfo[cityName]);
+            console.log(city[cityName]);
             
-            const cityDetails=cityInfo[cityName];
+            const cityDetails=city[cityName];
             if(!cityDetails){
                 alert("City not found");
                 return;
