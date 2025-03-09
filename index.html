@@ -5,9 +5,36 @@
 </head>
 <body>
     <h1>City Info</h1>
+    <input type="text" id="city" placeholder="Enter the city name"/>
+    <button onclick="getCityInfo()">Get info</button>
     <script>
         const city={
-            
+            pune:{
+            name:"Pune"
+            state:"Maharashtra"
+            country:"India"
+            info:"Pune is the second largest city in the state of Maharashtra. Pune city stands bordered by the ranges of the Sahyadri Mountain."
+            image:
+            },
+            mumbai:{
+            name:"Mumbai",
+            state:"Maharashtra",
+            country:"India",
+            info:"Mumbai is the capital of Maharashtra state in India, and is the country's financial and commercial hub. ",
+            image:
+            },
+            nagpur:{
+            name:"Nagpur",
+            state:"Maharashtra",
+            country:"India",
+            info:"Nagpur is the winter capital and third-largest city of the Indian state of Maharashtra.",
+            image:
+            }
+        }
+        
+        function getCityInfo(){
+            const cityName=document.getElementById("city").value.toLowerCase();
+            console.log(cityInfo[cityName]);
         }
     </script>
 </body>
