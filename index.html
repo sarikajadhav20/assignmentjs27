@@ -2,11 +2,27 @@
 <html>
 <head>
     <title>Assignment 27</title>
+    <style>
+        .city{
+            font-size:30px;
+            background-color: rgb(246, 233, 217);
+            color:black;
+            cursor: pointer;
+            padding: 20px auto;
+        }
+        .btn{
+            font-size:30px;
+            background-color:rgb(161, 245, 161);
+            color: white;
+            cursor: pointer;
+            padding: 20px auto;
+        }
+    </style>
 </head>
 <body>
     <h1>City Info</h1>
-    <input type="text" id="city" placeholder="Enter the city name"/>
-    <button onclick="getCityInfo()">Get info</button>
+    <input type="text" id="city" placeholder="Enter the city name" class="city"/>
+    <button onclick="getCityInfo()" class="btn">Get info</button>
     <script>
         const city={
             pune:{
